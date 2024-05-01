@@ -9,6 +9,10 @@
 </style>
 
 <div class="example-wrapper">
+
+    {% for message in app.flashes('exito') %}
+        <div class="alert alert-success"> {{ message}} </div>
+    {% endfor %}
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     <h3>    {{miVariable}}   </h3
