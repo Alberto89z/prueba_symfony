@@ -77,4 +77,9 @@ class Games
 
         return $this;
     }
+
+    public function juego(string $name): string
+    {
+        return '¡Hola, tu juego es '. $name . '!';
+    }
 }
