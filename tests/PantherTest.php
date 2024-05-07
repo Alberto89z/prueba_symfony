@@ -11,6 +11,6 @@ class PantherTest extends PantherTestCase
         $client = static::createPantherClient();
         $crawler = $client->request('GET', '/prueba');
 
-        $this->assertSelectorTextContains('h1', 'Hello');
+        $this->assertSelectorTextContains('h1', 'Hello Worlds');
     }
 }

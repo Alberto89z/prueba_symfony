@@ -13,6 +13,6 @@ class GamesTest extends TestCase
 
         $nombre = $game->juego('Nier Automata');
 
-        $this->assertEquals('¡Hola, tu juego es Nier Automata!',$nombre);
+        $this->assertEquals('¡Hola, tu juego es Nier Automata asdasd!',$nombre);
     }
 }

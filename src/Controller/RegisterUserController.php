@@ -20,7 +20,7 @@ class RegisterUserController extends AbstractController
 
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
-        echo "Se inica el formulario";
+        echo "Se inicia el formulario";
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $form->getData();
@@ -30,7 +30,7 @@ class RegisterUserController extends AbstractController
             $entityManagerInterface->persist($user);
             $entityManagerInterface->flush();
             $this->addFlash('exito', 'Se ha registrado exitosamente');
-            return $this->redirectToRoute('app_prueba');
+            return $this->redirectToRoute('app_register_user');
         }
 
         return $this->render('register_user/index.html.twig', [

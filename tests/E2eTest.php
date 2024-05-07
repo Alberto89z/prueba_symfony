@@ -12,9 +12,9 @@ class E2eTest extends WebTestCase
         $client = static::createClient();
         $client->request('GET', '/register/user');
         $client->submitForm('Guardar', [
-            'user[name]' => 'Kellogs',
-            'user[password]' => 'p4sw06d',
-            'user[email]' => 'me2@automat.ed',
+            'user[name]' => 'Zukaritas',
+            'user[password]' => 'p4sw06dr',
+            'user[email]' => 'me2@automat.ede',
         ]);
         $this->assertResponseRedirects();
         $client->followRedirect();
